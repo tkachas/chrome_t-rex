@@ -5,6 +5,10 @@ const start = document.getElementById('start');
 const count = document.getElementById('result');
 let i = 0;
 let speed_value = 1.4;
+let score = new Audio();
+score.src = "audio/jump.wav";
+let death = new Audio();
+death.src = "audio/die.wav";
 
 console.log(dino);
 start.addEventListener("click", function(event) {
@@ -24,6 +28,7 @@ start.addEventListener("click", function(event) {
             i++;
             count.innerText = 'Your result is: ' + i;
         }
+        score.play();
     })
     if (i % 5 == 0 && i > 4 && speed_value != 0.7) {
         speed_value -= 0.6;
@@ -47,6 +52,7 @@ let checkAlive = setInterval(function() {
     let dinoTop = parseInt(window.getComputedStyle(dino).getPropertyValue("top"));
     let cactusLeft = parseInt(window.getComputedStyle(cactus).getPropertyValue("left"));
     if (cactusLeft < 40 && cactusLeft > 0 && dinoTop >= 140) {
+        death.play();
         alert("game over... Your result is " + i);
         location.reload();
         return true;
