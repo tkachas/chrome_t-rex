@@ -25,12 +25,12 @@
 }
 #dino {
     width: 50px;
-    height: 50px;
-    background-image: url(img/new_dino.png);
-    background-size: 50px 50px;
+    height: 60px;
+    background-image: url(img/jimin_1.png);
+    background-size: 50px 60px;
     position: relative;
     left: 10px;
-    top: 150px;
+    top: 140px;
     /* animation: run 0.3s infinite linear; */
 }
 #cactus {
@@ -39,7 +39,7 @@
     background-image: url(img/cactus.png);
     background-size: 20px 35px;
     position: relative;
-    top: 115px;
+    top: 105px;
     left: 550px;
 }
 #result {
@@ -67,13 +67,13 @@
 }
 @keyframes run {
     0% {
-        background-image: url(img/new_dino.png);
+        background-image: url(img/jimin_1.png);
     }
     50% {
-        background-image: url(img/dino_move_1.png);
+        background-image: url(img/jimin_2.png);
     }
     100% {
-        background-image: url(img/dino_move_2.png);
+        background-image: url(img/jimin_3.png);
     }
 }
 .jump {
@@ -82,36 +82,36 @@
 
 @keyframes jump {
     0% {
-        top: 150px;
+        top: 140px;
     }
     10% {
-        top: 135px;
+        top: 125px;
     }
     15% {
-        top: 120px
+        top: 110px
     }
     25% {
-        top: 100px;
+        top: 90px;
     }
     35% {
-        top: 70px;
+        top: 60px;
     }
     45% {
-        top: 70px;
+        top: 60px;
     }
     50% {
-        top: 70px;
+        top: 60px;
     }
     60% {
-        top: 95px;
+        top: 85px;
     }
     70% {
-        top: 115px;
+        top: 105px;
     }
     80% {
-        top: 130px;
+        top: 120px;
     }
     100% {
-        top: 150px;
+        top: 140px;
     }
 }
