@@ -17,6 +17,8 @@
     align-items: center;
     color: white;
     font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: larger;
 }
 #start:hover {
     cursor: pointer;
@@ -40,8 +42,15 @@
     top: 115px;
     left: 550px;
 }
+#result {
+    position:fixed;
+    font-size: larger;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: gray;
+}
 .cactus_movement {
-    animation: cactus 1.4s infinite linear;
+    animation: cactus infinite linear;
 }
 
 .run {
