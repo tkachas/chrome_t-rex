@@ -37,10 +37,10 @@
     background-size: 20px 35px;
     position: relative;
     top: 115px;
-    left: 500px;
+    left: 550px;
 }
 .cactus_movement {
-    animation: cactus 1s infinite linear;
+    animation: cactus 1.4s infinite linear;
 }
 
 .run {
@@ -49,10 +49,10 @@
 
 @keyframes cactus {
     0% {
-        left: 500px;
+        left: 550px;
     }
     100% {
-        left: -20px;
+        left: -30px;
     }
 }
 @keyframes run {
